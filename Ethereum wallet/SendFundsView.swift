@@ -58,12 +58,19 @@ class SendFundsView: UIView,UITextFieldDelegate {
         textField.resignFirstResponder()
         return true
     }
+    @IBAction func closeViewAction(_ sender: Any) {
+        UIView.animate(withDuration: 0.5) { 
+                 self.alpha = 0.0
+        }
+   
+    }
     @IBAction func sendFundsAction(_ sender: UIButton) {
         if(idTextField.text == "" && amountTextField.text == "")
         {
             
         }
         else{
+            self.alpha = 0.0
             delegate.sendFunds(id: idTextField.text!, amountText: amountTextField.text!)
         }
     }

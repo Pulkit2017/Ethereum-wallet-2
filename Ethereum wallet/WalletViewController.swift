@@ -43,6 +43,12 @@ class WalletViewController: UIViewController,UITableViewDelegate,UITableViewData
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func sendAction(_ sender: Any) {
+        UIView.animate(withDuration: 0.5) { 
+                   self.sendFundView.alpha  = 1.0
+        }
+ 
+    }
     func sendFunds(id: String, amountText: String) {
           var param = [String:String]()
         
@@ -51,12 +57,14 @@ class WalletViewController: UIViewController,UITableViewDelegate,UITableViewData
             "amount": amountText
             
         ]
+        
+        //ISSUE WITH SEND FUNDS
         getWallet(url: "wallet/ethereum/send/",type: HTTPMethod.post,params: param)
     }
     func getWallet(url:String,type:HTTPMethod,params:[String:String]!)
         
     {
-        var param = [String:String]()
+        
         var dictionary = [
             
             "x-access-token": token
@@ -72,11 +80,11 @@ class WalletViewController: UIViewController,UITableViewDelegate,UITableViewData
         }
       
         
-        request("\(Service.applinkUrl)\(url)", method: type, parameters: param, encoding: JSONEncoding.default, headers: dictionary as? HTTPHeaders).responseJSON { response in
+        request("\(Service.applinkUrl)\(url)", method: type, parameters: nil, encoding: JSONEncoding.default, headers: dictionary as? HTTPHeaders).responseJSON { response in
          let statusCode = response.response?.statusCode
            if(statusCode != nil)
            {
-            if(statusCode != 404)
+            if(statusCode == 200)
             {
             if(url == "wallet/ethereum/")
             {
@@ -99,6 +107,9 @@ class WalletViewController: UIViewController,UITableViewDelegate,UITableViewData
             }
             else if(url == "wallet/ethereum/create/")
             {
+                
+                
+                
                  let alert = UIAlertController(title: "Success", message: "Wallet Created", preferredStyle: UIAlertControllerStyle.alert)
                 alert.addAction(UIAlertAction(title: "Close", style: UIAlertActionStyle.default, handler: nil))
                 self.present(alert, animated: true, completion: nil)

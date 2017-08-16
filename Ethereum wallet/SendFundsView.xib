@@ -21,9 +21,9 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWQ-tg-KE1">
-                    <rect key="frame" x="0.0" y="124" width="320" height="36"/>
+                    <rect key="frame" x="160" y="124" width="160" height="36"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="36" id="Z87-j5-I1C"/>
+                        <constraint firstAttribute="height" constant="36" id="zaj-6w-vih"/>
                     </constraints>
                     <state key="normal" title="Send fund">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -48,24 +48,38 @@
                     </constraints>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                 </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xpc-Oq-Ozn">
+                    <rect key="frame" x="0.0" y="124" width="160" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="jDT-iG-2aw"/>
+                    </constraints>
+                    <state key="normal" title="Close">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="closeViewAction:" destination="-1" eventType="touchUpInside" id="UOD-xv-YmD"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="MWQ-tg-KE1" secondAttribute="bottom" id="3MB-g5-gkV"/>
                 <constraint firstItem="bwB-4n-AZl" firstAttribute="top" secondItem="4gJ-6t-2XK" secondAttribute="bottom" constant="14" id="5By-Xe-tLy"/>
-                <constraint firstItem="MWQ-tg-KE1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ABK-FC-kMZ"/>
+                <constraint firstAttribute="bottom" secondItem="Xpc-Oq-Ozn" secondAttribute="bottom" id="AAj-QU-pWe"/>
+                <constraint firstAttribute="trailing" secondItem="MWQ-tg-KE1" secondAttribute="trailing" id="Ifj-ly-hMF"/>
                 <constraint firstAttribute="trailing" secondItem="4gJ-6t-2XK" secondAttribute="trailing" id="UZG-mi-vIL"/>
                 <constraint firstAttribute="trailing" secondItem="bwB-4n-AZl" secondAttribute="trailing" id="WWU-hX-n2r"/>
-                <constraint firstItem="MWQ-tg-KE1" firstAttribute="top" secondItem="bwB-4n-AZl" secondAttribute="bottom" constant="50" id="XSs-JS-pP3"/>
-                <constraint firstAttribute="trailing" secondItem="MWQ-tg-KE1" secondAttribute="trailing" id="eIR-jX-KBY"/>
+                <constraint firstItem="Xpc-Oq-Ozn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ajN-ED-1eI"/>
+                <constraint firstItem="MWQ-tg-KE1" firstAttribute="width" secondItem="Xpc-Oq-Ozn" secondAttribute="width" id="d4s-6H-d4h"/>
                 <constraint firstItem="4gJ-6t-2XK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fbq-cH-Qza"/>
+                <constraint firstAttribute="bottom" secondItem="MWQ-tg-KE1" secondAttribute="bottom" id="fnt-2K-5EE"/>
                 <constraint firstItem="4gJ-6t-2XK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="h2y-TD-YBb"/>
                 <constraint firstItem="bwB-4n-AZl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kcJ-f7-Mpw"/>
+                <constraint firstItem="MWQ-tg-KE1" firstAttribute="leading" secondItem="Xpc-Oq-Ozn" secondAttribute="trailing" id="krO-MK-U68"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-29" y="-264"/>
+            <point key="canvasLocation" x="-304" y="-280"/>
         </view>
     </objects>
 </document>
