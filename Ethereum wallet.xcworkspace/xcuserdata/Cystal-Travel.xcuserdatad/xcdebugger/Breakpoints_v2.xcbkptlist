@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Ethereum wallet/LoginView.swift"
+            timestampString = "524056226.708388"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "LoginView"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Ethereum_wallet.LoginView.emailTextField.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITextField&gt;"
+                  moduleName = "Ethereum wallet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Cystal-Travel/Desktop/Ethereum%20wallet/Ethereum%20wallet/LoginView.swift"
+                  timestampString = "524049027.376453"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Ethereum_wallet.LoginView.emailTextField.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITextField&gt;"
+                  moduleName = "Ethereum wallet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Cystal-Travel/Desktop/Ethereum%20wallet/Ethereum%20wallet/LoginView.swift"
+                  timestampString = "524049027.378143"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Ethereum_wallet.LoginView.init (frame : __C.CGRect) -&gt; Ethereum_wallet.LoginView"
+                  moduleName = "Ethereum wallet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Cystal-Travel/Desktop/Ethereum%20wallet/Ethereum%20wallet/LoginView.swift"
+                  timestampString = "524049027.379812"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "66">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Ethereum_wallet.LoginView.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Ethereum_wallet.LoginView&gt;"
+                  moduleName = "Ethereum wallet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Cystal-Travel/Desktop/Ethereum%20wallet/Ethereum%20wallet/LoginView.swift"
+                  timestampString = "524049027.381407"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "31">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            scope = "0"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Ethereum wallet/WalletModel.swift"
+            timestampString = "524062034.22849"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "init()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Ethereum_wallet.WalletModel.init () -&gt; Ethereum_wallet.WalletModel"
+                  moduleName = "Ethereum wallet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Cystal-Travel/Downloads/Ethereum%20wallet%202/Ethereum%20wallet/WalletModel.swift"
+                  timestampString = "524586698.925639"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "59">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Ethereum_wallet.WalletModel.__allocating_init () -&gt; Ethereum_wallet.WalletModel"
+                  moduleName = "Ethereum wallet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Cystal-Travel/Downloads/Ethereum%20wallet%202/Ethereum%20wallet/WalletModel.swift"
+                  timestampString = "524586698.928511"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Ethereum wallet/ViewController.swift"
+            timestampString = "524573708.120609"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "registerAction()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Ethereum wallet/WalletModel.swift"
+            timestampString = "524061485.765379"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "WalletModel"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Ethereum_wallet.WalletModel.__allocating_init (map : ObjectMapper.Map) -&gt; Ethereum_wallet.WalletModel"
+                  moduleName = "Ethereum wallet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Cystal-Travel/Desktop/Ethereum%20wallet/Ethereum%20wallet/WalletModel.swift"
+                  timestampString = "524061486.806268"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Ethereum_wallet.WalletModel.init (map : ObjectMapper.Map) -&gt; Ethereum_wallet.WalletModel"
+                  moduleName = "Ethereum wallet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Cystal-Travel/Desktop/Ethereum%20wallet/Ethereum%20wallet/WalletModel.swift"
+                  timestampString = "524061486.807693"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "63">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Ethereum wallet/WalletViewController.swift"
+            timestampString = "524578117.924015"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "sendFunds(id:amountText:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

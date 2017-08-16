@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="JkH-5t-K9t">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="kIc-oG-WeS">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="JkH-5t-K9t" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DQj-28-Nem">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="7dL-ce-EMu" kind="relationship" relationship="rootViewController" id="Jdt-jx-CvG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aIM-Nb-2Ec" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="188" y="-241"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="XLV-5o-6fS">
+            <objects>
+                <viewController id="7dL-ce-EMu" customClass="ViewController" customModule="Ethereum_wallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vXG-kp-vO1"/>
+                        <viewControllerLayoutGuide type="bottom" id="V9D-9H-Xrk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JKm-74-SqK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bjh-fb-U7V">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="84"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ethereum wallet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOB-X9-3Zf">
+                                        <rect key="frame" x="0.0" y="25" width="375" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="v6c-Yv-tZb"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k91-yU-FAj">
+                                <rect key="frame" x="10" y="275" width="355" height="49"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="AKL-ku-tbd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginButtonAction:" destination="7dL-ce-EMu" eventType="touchUpInside" id="Udp-JF-umX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Juo-2F-iOf">
+                                <rect key="frame" x="10" y="332" width="355" height="54"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="rTs-wj-gec"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Registration">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="registerButtonAction:" destination="7dL-ce-EMu" eventType="touchUpInside" id="Gz6-7c-6lU"/>
+                                </connections>
+                            </button>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SEq-W6-LcC" customClass="LoginView" customModule="Ethereum_wallet" customModuleProvider="target">
+                                <rect key="frame" x="10" y="154" width="355" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Agy-j0-UPp"/>
+                                </constraints>
+                            </view>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dkj-e9-t56" customClass="RegistrationView" customModule="Ethereum_wallet" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="84" width="375" height="330"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="330" id="lvF-5T-PSm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Dkj-e9-t56" firstAttribute="leading" secondItem="JKm-74-SqK" secondAttribute="leading" id="3MM-iR-0lN"/>
+                            <constraint firstItem="k91-yU-FAj" firstAttribute="top" secondItem="bjh-fb-U7V" secondAttribute="bottom" constant="191" id="ALS-M2-KQr"/>
+                            <constraint firstAttribute="trailing" secondItem="Dkj-e9-t56" secondAttribute="trailing" id="BlX-wY-VS2"/>
+                            <constraint firstItem="Dkj-e9-t56" firstAttribute="top" secondItem="bjh-fb-U7V" secondAttribute="bottom" id="Evv-Qc-1vg"/>
+                            <constraint firstAttribute="trailing" secondItem="k91-yU-FAj" secondAttribute="trailing" constant="10" id="GVb-K6-O1Z"/>
+                            <constraint firstAttribute="trailing" secondItem="bjh-fb-U7V" secondAttribute="trailing" id="HNF-mO-FrX"/>
+                            <constraint firstItem="SEq-W6-LcC" firstAttribute="top" secondItem="bjh-fb-U7V" secondAttribute="bottom" constant="70" id="NHo-H8-Y0p"/>
+                            <constraint firstItem="bjh-fb-U7V" firstAttribute="top" secondItem="JKm-74-SqK" secondAttribute="top" id="OzT-VH-K87"/>
+                            <constraint firstItem="Juo-2F-iOf" firstAttribute="leading" secondItem="JKm-74-SqK" secondAttribute="leadingMargin" constant="-6" id="Q0X-AZ-28S"/>
+                            <constraint firstItem="SEq-W6-LcC" firstAttribute="leading" secondItem="JKm-74-SqK" secondAttribute="leading" constant="10" id="Tw0-5c-BVf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Juo-2F-iOf" secondAttribute="trailing" constant="-6" id="WRt-b6-KLa"/>
+                            <constraint firstItem="Juo-2F-iOf" firstAttribute="top" secondItem="k91-yU-FAj" secondAttribute="bottom" constant="8" id="fJF-iT-ou8"/>
+                            <constraint firstItem="bjh-fb-U7V" firstAttribute="leading" secondItem="JKm-74-SqK" secondAttribute="leading" id="q40-Cc-KIP"/>
+                            <constraint firstAttribute="trailing" secondItem="SEq-W6-LcC" secondAttribute="trailing" constant="10" id="slr-YF-Nve"/>
+                            <constraint firstItem="k91-yU-FAj" firstAttribute="leading" secondItem="JKm-74-SqK" secondAttribute="leading" constant="10" id="wMO-5t-Eat"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="7oM-TW-2Sg"/>
+                    <connections>
+                        <outlet property="loginButton" destination="k91-yU-FAj" id="aF8-23-jub"/>
+                        <outlet property="loginView" destination="SEq-W6-LcC" id="OR0-Iy-FDe"/>
+                        <outlet property="registrationButton" destination="Juo-2F-iOf" id="hWm-eF-z0o"/>
+                        <outlet property="registrationView" destination="Dkj-e9-t56" id="Rzg-M0-Uyx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ts0-dG-plt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1456.8" y="-927.88605697151434"/>
+        </scene>
+        <!--Wallet View Controller-->
+        <scene sceneID="QtN-rx-6Yg">
+            <objects>
+                <viewController storyboardIdentifier="wallet" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mja-To-Gsg" customClass="WalletViewController" customModule="Ethereum_wallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9Kl-Bv-t1X"/>
+                        <viewControllerLayoutGuide type="bottom" id="2MF-fz-pCb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DEV-Ad-92Q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hRh-9M-3c3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="84"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wallet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EbJ-42-4hi" userLabel="Wallet">
+                                        <rect key="frame" x="0.0" y="25" width="375" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UPf-yH-1y9">
+                                        <rect key="frame" x="319" y="23" width="48" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="SM8-ma-qS3"/>
+                                        </constraints>
+                                        <state key="normal" title="Logout">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="logout:" destination="mja-To-Gsg" eventType="touchUpInside" id="2PO-9h-hGm"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="UPf-yH-1y9" firstAttribute="top" secondItem="hRh-9M-3c3" secondAttribute="top" constant="23" id="XLv-Xq-rI5"/>
+                                    <constraint firstAttribute="trailing" secondItem="UPf-yH-1y9" secondAttribute="trailing" constant="8" id="n4Q-Fa-tAW"/>
+                                    <constraint firstAttribute="height" constant="84" id="nS9-xu-wmm"/>
+                                    <constraint firstAttribute="bottom" secondItem="UPf-yH-1y9" secondAttribute="bottom" constant="31" id="osz-iA-gCJ"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJq-8W-nhk">
+                                <rect key="frame" x="16" y="92" width="61" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="NAg-7l-XAV"/>
+                                    <constraint firstAttribute="width" constant="61" id="Rzq-rf-Quf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qbN-We-UP3">
+                                <rect key="frame" x="85" y="92" width="274" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="274" id="KCX-Yc-Ost"/>
+                                    <constraint firstAttribute="height" constant="37" id="vyn-S2-ROg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1q8-cn-YGd">
+                                <rect key="frame" x="0.0" y="277" width="375" height="390"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="390" id="l73-Eq-skm"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="mja-To-Gsg" id="6Hj-jh-xdA"/>
+                                    <outlet property="delegate" destination="mja-To-Gsg" id="9xj-q5-6yM"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ne6-Ay-DwX">
+                                <rect key="frame" x="16" y="137" width="125" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Create Wallet"/>
+                                <connections>
+                                    <action selector="createWalletAction:" destination="mja-To-Gsg" eventType="touchUpInside" id="KLv-oH-7S0"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dsP-RV-yuo" customClass="SendFundsView" customModule="Ethereum_wallet" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="253" width="375" height="160"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="6cn-8P-8rT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sJq-8W-nhk" firstAttribute="top" secondItem="hRh-9M-3c3" secondAttribute="bottom" constant="8" id="2j4-bj-B0N"/>
+                            <constraint firstItem="qbN-We-UP3" firstAttribute="top" secondItem="hRh-9M-3c3" secondAttribute="bottom" constant="8" id="7df-Nn-Im9"/>
+                            <constraint firstItem="2MF-fz-pCb" firstAttribute="top" secondItem="sJq-8W-nhk" secondAttribute="bottom" constant="538" id="Bqi-8R-3D8"/>
+                            <constraint firstAttribute="trailing" secondItem="1q8-cn-YGd" secondAttribute="trailing" id="MTY-u7-0rf"/>
+                            <constraint firstItem="hRh-9M-3c3" firstAttribute="top" secondItem="DEV-Ad-92Q" secondAttribute="top" id="MzW-PZ-Gg8"/>
+                            <constraint firstAttribute="trailing" secondItem="hRh-9M-3c3" secondAttribute="trailing" id="QbS-pM-CMK"/>
+                            <constraint firstAttribute="trailing" secondItem="dsP-RV-yuo" secondAttribute="trailing" id="V86-QH-xqi"/>
+                            <constraint firstItem="2MF-fz-pCb" firstAttribute="top" secondItem="1q8-cn-YGd" secondAttribute="bottom" id="X7Z-dF-qjn"/>
+                            <constraint firstItem="1q8-cn-YGd" firstAttribute="leading" secondItem="DEV-Ad-92Q" secondAttribute="leading" id="ZV0-IF-iQ2"/>
+                            <constraint firstItem="dsP-RV-yuo" firstAttribute="top" secondItem="9Kl-Bv-t1X" secondAttribute="bottom" constant="233" id="aYf-x4-TWC"/>
+                            <constraint firstItem="hRh-9M-3c3" firstAttribute="leading" secondItem="DEV-Ad-92Q" secondAttribute="leading" id="iFq-KC-R6Z"/>
+                            <constraint firstItem="dsP-RV-yuo" firstAttribute="leading" secondItem="DEV-Ad-92Q" secondAttribute="leading" id="l1C-5W-kTg"/>
+                            <constraint firstItem="qbN-We-UP3" firstAttribute="trailing" secondItem="DEV-Ad-92Q" secondAttribute="trailingMargin" id="mTx-yI-7eU"/>
+                            <constraint firstItem="2MF-fz-pCb" firstAttribute="top" secondItem="qbN-We-UP3" secondAttribute="bottom" constant="538" id="qLe-QR-JRO"/>
+                            <constraint firstItem="sJq-8W-nhk" firstAttribute="leading" secondItem="DEV-Ad-92Q" secondAttribute="leadingMargin" id="szG-gm-JuJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="balanceLabel" destination="qbN-We-UP3" id="p4Z-qb-LSE"/>
+                        <outlet property="historyTableView" destination="1q8-cn-YGd" id="cCS-cS-MOB"/>
+                        <outlet property="sendFundView" destination="dsP-RV-yuo" id="qUJ-SQ-U4g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2pe-5K-q4J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1842" y="233"/>
+        </scene>
+    </scenes>
+</document>
